@@ -2,7 +2,7 @@
 """
 Created on Tue Apr 21 14:57:17 2020
 
-@author: etill
+@author: camilla
 """
 
 #import statements
@@ -15,6 +15,10 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return render_template("index.html")
+
+@app.route("/favorite_site")
+def favorite_site():
+    return render_template("favsite.html")
 
 #start the server
 if __name__ == "__main__":
