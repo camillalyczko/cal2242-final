@@ -20,13 +20,14 @@ def hello():
 def favorite_site():
     return render_template("favsite.html")
 
-#@app.route("my_assignments")
-#def my_assignments():
-    #return 
-
 @app.route("/my_classes")
 def my_classes():
     return render_template("classes.html")
+
+@app.route("/my_research") 
+def my_research():
+    return render_template("research.html")
+
 
 #start the server
 if __name__ == "__main__":
